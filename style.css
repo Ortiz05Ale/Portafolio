@@ -1,0 +1,63 @@
+#barra {
+    background-color: #7E9FDE;
+    
+    color: white; /* Color de texto blanco */
+    font-size: medium;
+    padding: 2% 0; /* Espacio interno superior e inferior */
+    width: 100%; /* Ancho completo */
+    position: fixed; /* Fija la barra en la pantalla */
+    top: 0; /* Posiciona la barra en la parte superior */
+    left: 0; /* Posiciona la barra en el lado izquierdo */
+    z-index: 1000; /* Asegura que la barra esté sobre otros contenidos */
+}
+
+#barra nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    text-align: right; /* Centra los elementos de la lista */
+}
+
+#barra nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 3%; /* Espacio entre los elementos del menú */
+}
+
+#barra nav ul li a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+p{
+    white-space: pre-line;
+}
+
+.resumen{
+    width: 30%;
+    
+    margin: 15%;
+    background-color: aqua;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil{
+    width: 15%;
+    height: 40%;
+    border-radius: 50%;
+    margin: 10%;
+}
+.icono{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion{
+   
+   align-items: center;
+
+}
