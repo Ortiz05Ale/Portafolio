@@ -35,7 +35,6 @@
     margin-top: 4%;
     padding: 2%;
     padding-top: 5px;
-    background-color: rgb(255, 255, 255);
     text-align: justify;
     align-items: center;
     justify-content: center;
@@ -43,7 +42,8 @@
     flex-direction: column;
     font-size: 15px;
     border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; 
 }
 
 
@@ -67,7 +67,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f1f1f1;
     padding-bottom: 4%;
 
 }
@@ -87,6 +86,28 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 }
+
+.proyecto{
+   width: 30%;
+    height: 40%;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    border-radius: 10px;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; 
+}
+
+.proyectos{
+    display: flex;           /* Usamos flexbox para organizar las tarjetas */
+  flex-wrap: wrap;   
+  justify-content: center;  
+}
 .foto{
      width:80% ;
      height: 50%;                    /* Ajustar para que la foto no ocupe todo el espacio */
@@ -94,14 +115,31 @@
      margin: 15px;
 }
 
+.tecno{
+    object-fit: contain;
+    width:2000px ;
+    height: 200px;
+}
+
 .seccion2{
-    padding-top: 5%;
+    padding-top: 3%;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+.seccion3{
+    padding-top: 3%;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
 }
 
 /* Estilos para las evidencias (reconocimientos) */
 .reconocimientos {
   padding: 50px 20px;
-  background-color: #f9f9f9;
   display: flex;           /* Usamos flexbox para organizar las tarjetas */
   flex-wrap: wrap;   
   justify-content: center;  
@@ -112,6 +150,13 @@
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Efecto hover para las tarjetas */
 }
 
+.proyecto:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resumen:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
 .evidencia h2 {
   font-size: 1.5em;
   color: #333;
@@ -166,5 +211,22 @@ a:hover {
 
   .evidencia {
     width: 90%; /* Aumentar el tamaño de las tarjetas en pantallas pequeñas */
+    
   }
+
+  .evidencia:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+
+  }
+
+  .proyecto:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+  }
+
+  .resumen:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+  }  
 }
