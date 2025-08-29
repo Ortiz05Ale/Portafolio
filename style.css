@@ -1,33 +1,31 @@
 #barra {
     background-color: #7E9FDE;
-    color: white; /* Color de texto blanco */
+    color: white; 
     font-size: 20px;
-    padding: 1%; /* Espacio interno superior e inferior */
-    width: 100%; /* Ancho completo */
-    position: fixed; /* Fija la barra en la pantalla */
-    top: 0; /* Posiciona la barra en la parte superior */
-    left: 0; /* Posiciona la barra en el lado izquierdo */
-    z-index: 1000; /* Asegura que la barra esté sobre otros contenidos */
+    padding: 1%; 
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 
 #barra nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
+    list-style: none; 
     padding: 0;
     margin: 0;
-    text-align: right; /* Centra los elementos de la lista */
+    text-align: right; 
 }
 
 #barra nav ul li {
-    display: inline; /* Muestra los elementos de la lista en línea */
-    margin: 0 3%; /* Espacio entre los elementos del menú */
+    display: inline; 
+    margin: 0 3%;
 }
 
 #barra nav ul li a {
-    color: white; /* Color de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; 
+    text-decoration: none;
 }
-
-
 
 .resumen{
     width: 40%;
@@ -104,13 +102,13 @@
 }
 
 .proyectos{
-    display: flex;           /* Usamos flexbox para organizar las tarjetas */
+    display: flex;          
   flex-wrap: wrap;   
   justify-content: center;  
 }
 .foto{
      width:80% ;
-     height: 50%;                    /* Ajustar para que la foto no ocupe todo el espacio */
+     height: 50%;
      object-fit: scale-down;  
      margin: 15px;
 }
@@ -137,17 +135,16 @@
     padding-bottom: 3%;
 }
 
-/* Estilos para las evidencias (reconocimientos) */
 .reconocimientos {
   padding: 50px 20px;
-  display: flex;           /* Usamos flexbox para organizar las tarjetas */
+  display: flex;           
   flex-wrap: wrap;   
   justify-content: center;  
   gap: 20px;      
 }
 
 .evidencia:hover {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Efecto hover para las tarjetas */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .proyecto:hover{
@@ -176,7 +173,6 @@
   margin-top: 15px;
 }
 
-/* Estilo de los enlaces */
 a {
   color: #4C6BFF;
   text-decoration: none;
@@ -186,7 +182,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Diseño responsive */
+
 @media (max-width: 768px) {
   .informacion {
     flex-direction: column;
@@ -210,23 +206,23 @@ a:hover {
   }
 
   .evidencia {
-    width: 90%; /* Aumentar el tamaño de las tarjetas en pantallas pequeñas */
+    width: 90%; 
     
   }
 
   .evidencia:hover {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    transform: translateY(-10px);
 
   }
 
   .proyecto:hover {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    transform: translateY(-10px); 
   }
 
   .resumen:hover {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+    transform: translateY(-10px); 
   }  
 }
